@@ -47,7 +47,9 @@ export default function AnalysisReportDetailPage() {
             align="text-left"
           />
           <SubText
-            text={`계약상 근무시간은 3시간이지만, 실제로는 지속적인\n초과근무가 발생했어요.`}
+            text={
+              "계약상 근무시간은 3시간이지만, 실제로는 지속적인 초과근무가 발생했어요."
+            }
             className="text-[16px] leading-[1.45] font-semibold text-[#8C755F]"
           />
         </div>
@@ -67,7 +69,7 @@ export default function AnalysisReportDetailPage() {
 
             <div className="rounded-[18px] bg-[#F2D5D5] px-5 py-5">
               <p className="text-color-primary text-center text-[15px] font-extrabold">
-                추정 연장근로수당 미지급액{" "}
+                추정 연장근로수당 미지급액
                 <span className="text-[#D94E4E]">(1년 기준)</span>
               </p>
               <div className="mt-5 flex items-center justify-center gap-2">
@@ -89,7 +91,9 @@ export default function AnalysisReportDetailPage() {
             align="text-left"
           />
           <SubText
-            text={`4시간 이상 근무 시 30분 이상 휴게시간이 보장되어야\n하지만, 실질적으로 보장되지 않았을 가능성이 높아요.`}
+            text={
+              "4시간 이상 근무 시 30분 이상 휴게시간이 보장되어야 하지만, 실질적으로 보장되지 않았을 가능성이 높아요."
+            }
             className="text-[16px] leading-[1.45] font-semibold text-[#8C755F]"
           />
         </div>
