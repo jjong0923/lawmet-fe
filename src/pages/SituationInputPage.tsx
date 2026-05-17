@@ -35,10 +35,10 @@ export default function SituationInputPage() {
       <div className="mt-6 flex flex-col gap-6">
         <BoxWrapper>
           <p className="h-30">
-            3개월 동안 주 6일 하루 10시간씩 일했는데사장님이 주휴수당과
-            야간수당을 지급하지 않았어요.근로계약서도 작성하지
-            않았고퇴사하겠다고 하자 마지막 월급 일부를 주지 않았습니다.어떻게
-            대응해야 하나요?
+            3개월 동안 주 6일 하루 10시간씩 일했는데{"\n"}사장님이 주휴수당과
+            야간수당을 지급하지 않았어요.{"\n"}근로계약서도 작성하지 않았고
+            {"\n"}퇴사하겠다고 하자 마지막 월급 일부를 주지 않았습니다.{"\n"}
+            어떻게 대응해야 하나요?
           </p>
         </BoxWrapper>
         <BoxWrapper>
