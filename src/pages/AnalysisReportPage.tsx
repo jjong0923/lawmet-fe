@@ -62,7 +62,7 @@ export default function AnalysisReportPage() {
             className="mb-5 text-[15px] font-semibold text-[#8C755F]"
           />
           <Title
-            title={`총 4가지의\n노동문제가능성이\n있어요.`}
+            title={"총 4가지의 노동문제가능성이 있어요."}
             size="text-[24px] leading-[1.35]"
             align="text-left"
           />
