@@ -48,7 +48,7 @@ export default function AnalysisReportPage() {
       <div className="flex items-end gap-3">
         <div className="flex-1 pb-3">
           <SubText
-            text="000님의 상황을 분석했어요."
+            text="박당근님의 상황을 분석했어요."
             className="mb-5 text-[15px] font-semibold text-[#8C755F]"
           />
           <Title
