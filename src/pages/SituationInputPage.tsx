@@ -8,12 +8,9 @@ import Button from "../components/Button";
 export default function SituationInputPage() {
   return (
     <div className="flex flex-col items-center">
-      <img src={Img} className="h-38 w-40" />
+      <img src={Img} className="h-38 w-42" />
       <div className="flex flex-col items-center gap-2">
-        <Title
-          title={`현재 어떤 문제 상황을 \n겪고 있나요?`}
-          size="text-[28px]"
-        />
+        <Title title={`현재 어떤 문제 상황을 \n겪고 있나요?`} />
         <SubText text={"겪고 있는 상황을 간단하게 알려주세요."} />
       </div>
 
