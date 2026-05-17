@@ -205,59 +205,7 @@ function EvidenceIcon({
           />
         </svg>
       );
-    case "chat":
-      return (
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M7.25 16.5L4.75 19V7.75C4.75 6.7835 5.5335 6 6.5 6H14.5C15.4665 6 16.25 6.7835 16.25 7.75V13.5C16.25 14.4665 15.4665 15.25 14.5 15.25H8.5L7.25 16.5Z"
-            stroke="#111111"
-            strokeWidth="1.8"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M10.5 17.5L12.5 19.25H17.25C18.2165 19.25 19 18.4665 19 17.5V10.5C19 9.5335 18.2165 8.75 17.25 8.75"
-            stroke="#111111"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      );
-    case "edit":
-      return (
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M7.5 4.75H14L17.25 8V18.75C17.25 19.1642 16.9142 19.5 16.5 19.5H7.5C7.08579 19.5 6.75 19.1642 6.75 18.75V5.5C6.75 5.08579 7.08579 4.75 7.5 4.75Z"
-            stroke="#111111"
-            strokeWidth="1.8"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M13.75 4.75V8H17"
-            stroke="#111111"
-            strokeWidth="1.8"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M9 14.75L13.75 10L15.75 12L11 16.75L8.5 17.25L9 14.75Z"
-            stroke="#111111"
-            strokeWidth="1.8"
-            strokeLinejoin="round"
-          />
-        </svg>
-      );
+
     case "calendar":
       return (
         <svg
