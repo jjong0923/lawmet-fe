@@ -1,4 +1,5 @@
 export { default as AnalysisReportPage } from "./AnalysisReportPage";
+export { default as AnalysisReportDetailPage } from "./AnalysisReportDetailPage";
 export { default as AnalysisResultPage } from "./AnalysisResultPage";
 export { default as EvidenceManagePage } from "./EvidenceManagePage";
 export { default as LoadingPage } from "./LoadingPage";
