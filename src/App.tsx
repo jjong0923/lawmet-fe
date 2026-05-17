@@ -5,7 +5,7 @@ import {
   AnalysisReportDetailPage,
   AnalysisReportPage,
   AnalysisResultPage,
-  EvidenceManagePage,
+  EvidencePage,
   SituationInputPage,
 } from "./pages";
 
@@ -22,7 +22,7 @@ function App() {
             path="/analysis/report/detail"
             element={<AnalysisReportDetailPage />}
           />
-          <Route path="/evidence" element={<EvidenceManagePage />} />
+          <Route path="/evidence" element={<EvidencePage />} />
         </Route>
         <Route path="*" element={<Navigate to="/situation" replace />} />
       </Routes>
