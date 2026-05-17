@@ -5,7 +5,6 @@ import {
   AnalysisReportPage,
   AnalysisResultPage,
   EvidenceManagePage,
-  LoadingPage,
   SituationInputPage,
 } from "./pages";
 
@@ -16,7 +15,6 @@ function App() {
         <Route path="/" element={<Navigate to="/situation" replace />} />
         <Route element={<BaseLayout />}>
           <Route path="/situation" element={<SituationInputPage />} />
-          <Route path="/analysis/loading" element={<LoadingPage />} />
           <Route path="/analysis/result" element={<AnalysisResultPage />} />
           <Route path="/analysis/report" element={<AnalysisReportPage />} />
           <Route path="/evidence" element={<EvidenceManagePage />} />

@@ -1,11 +1,29 @@
+import { useState } from "react";
+import { useNavigate } from "react-router";
 import Img from "../assets/problem.png";
 import BoxWrapper from "../components/BoxWrapper";
 import SubText from "../components/SubTitle";
 import Title from "../components/Title";
 import BulbIcon from "../assets/tip-bubl.svg?react";
 import Button from "../components/Button";
+import LoadingPage from "./LoadingPage";
 
 export default function SituationInputPage() {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    setIsLoading(true);
+
+    setTimeout(() => {
+      navigate("/analysis/result");
+      setIsLoading(false);
+    }, 2500);
+  };
+
+  if (isLoading) {
+    return <LoadingPage />;
+  }
   return (
     <div className="flex flex-col items-center">
       <img src={Img} className="h-38 w-42" />
@@ -42,7 +60,7 @@ export default function SituationInputPage() {
       </div>
 
       <div className="mt-4 w-full">
-        <Button>다음</Button>
+        <Button onClick={handleClick}>다음</Button>
       </div>
     </div>
   );

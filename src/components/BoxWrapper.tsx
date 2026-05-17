@@ -6,7 +6,7 @@ export default function BoxWrapper({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-lg bg-[#FAEEE1] p-3 text-[14px] font-bold text-[#897361]">
+    <div className="rounded-lg bg-[#FAEEE1] p-3 text-[14px] font-bold whitespace-pre-wrap text-[#897361]">
       {children}
     </div>
   );
