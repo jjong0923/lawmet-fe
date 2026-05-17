@@ -28,7 +28,7 @@ export default function AnalysisResultPage() {
           등의 문제가 함께 존재하는 복합 노동 사건으로 분석됩니다.
         </BoxWrapper>
       </div>
-      <div className="mt-6 w-full">
+      <div className="mt-4 w-full">
         <Button onClick={() => navigate("/analysis/report")}>
           자세히 알아보기
         </Button>
