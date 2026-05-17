@@ -266,16 +266,16 @@ function EvidenceIcon({
           fill="none"
           aria-hidden="true"
         >
-          <circle cx="12" cy="13" r="6.75" stroke="#111111" strokeWidth="1.8" />
+          <circle cx="12" cy="13" r="6.75" stroke="#5A2E16" strokeWidth="1.8" />
           <path
             d="M12 9.5V13L14.5 14.5"
-            stroke="#111111"
+            stroke="#5A2E16"
             strokeWidth="1.8"
             strokeLinecap="round"
           />
           <path
             d="M9.25 3.75H14.75"
-            stroke="#111111"
+            stroke="#5A2E16"
             strokeWidth="1.8"
             strokeLinecap="round"
           />
