@@ -2,6 +2,7 @@ import { useNavigate } from "react-router";
 import Img from "../assets/report.png";
 import BoxWrapper from "../components/BoxWrapper";
 import Button from "../components/Button";
+import StatusBadge from "../components/StatusBadge";
 import SubText from "../components/SubTitle";
 import Title from "../components/Title";
 
@@ -34,13 +35,22 @@ const issues = [
 
 export default function AnalysisReportPage() {
   const navigate = useNavigate();
+  const today = new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(new Date())
+    .replace(/\.\s/g, ".")
+    .replace(/\.$/, "");
 
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
         <Title title="상황 분석 리포트" size="text-[28px]" align="text-left" />
         <SubText
-          text="분석완료 · 2025.05.15"
+          text={`분석완료 · ${today}`}
           className="text-[14px] text-[#8C755F]"
         />
       </div>
@@ -81,7 +91,10 @@ export default function AnalysisReportPage() {
                 <p className="text-color-primary flex-1 text-[14px] font-bold">
                   {issue.label}
                 </p>
-                <RiskBadge level={issue.level} tone={issue.tone} />
+                <StatusBadge
+                  label={issue.level}
+                  tone={issue.tone === "high" ? "rose" : "amber"}
+                />
               </div>
             ))}
           </div>
@@ -102,7 +115,10 @@ export default function AnalysisReportPage() {
         onClick={() => navigate("/evidence")}
       >
         <BoxWrapper className="rounded-xl px-5 py-4">
-          <div className="flex items-center gap-4">
+          <div
+            className="flex items-center gap-4"
+            onClick={() => navigate("/evidence")}
+          >
             <div className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-[#EACF9E]">
               <FolderIcon />
             </div>
@@ -119,27 +135,6 @@ export default function AnalysisReportPage() {
         </BoxWrapper>
       </button>
     </div>
-  );
-}
-
-function RiskBadge({
-  level,
-  tone,
-}: {
-  level: string;
-  tone: "high" | "medium";
-}) {
-  const toneClass =
-    tone === "high"
-      ? "bg-[#F7D5D5] text-[#D94E4E]"
-      : "bg-[#FFE7C7] text-[#F08A35]";
-
-  return (
-    <span
-      className={`inline-flex min-w-15 items-center justify-center rounded-full px-3.5 py-2.5 text-[15px] font-bold ${toneClass}`}
-    >
-      {level}
-    </span>
   );
 }
 
